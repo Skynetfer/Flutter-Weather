@@ -42,12 +42,13 @@ class _CurrentWeatherPageState extends State<CurrentWeatherPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-              margin: EdgeInsets.all(10),
-              child: Text(
-                "${_weather.temp}°C",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 55),
-              )),
+            margin: EdgeInsets.all(10),
+            child: Text(
+              "${_weather.temp}°C",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 55),
+            ),
+          ),
           Container(
               margin: EdgeInsets.all(10),
               child: Text("${_weather.description}")),
@@ -64,7 +65,9 @@ class _CurrentWeatherPageState extends State<CurrentWeatherPage> {
 
   Future getCurrentWeather() async {
     Weather? weather;
+    //YOUR CITY
     String city = "hanoi";
+    //YOUT API KEY
     String apiKey = "569261f1114cd27b116aecc86d52f879";
 
     var url =
