@@ -64,7 +64,9 @@ class _CurrentWeatherPageState extends State<CurrentWeatherPage> {
 
   Future getCurrentWeather() async {
     Weather? weather;
+    //YOUR CITY
     String city = "hanoi";
+    //YOUT API KEY
     String apiKey = "569261f1114cd27b116aecc86d52f879";
 
     var url =
