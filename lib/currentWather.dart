@@ -42,12 +42,13 @@ class _CurrentWeatherPageState extends State<CurrentWeatherPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-              margin: EdgeInsets.all(10),
-              child: Text(
-                "${_weather.temp}°C",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 55),
-              )),
+            margin: EdgeInsets.all(10),
+            child: Text(
+              "${_weather.temp}°C",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 55),
+            ),
+          ),
           Container(
               margin: EdgeInsets.all(10),
               child: Text("${_weather.description}")),
