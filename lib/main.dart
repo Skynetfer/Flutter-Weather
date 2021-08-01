@@ -20,10 +20,11 @@ class MyApp extends StatelessWidget {
     //     lattitude: "10.762622",
     //     longitude: "106.660172"),
     new Location(
-        city: "Ha Noi",
-        country: "Viet Nam",
-        lattitude: "21.028511",
-        longitude: "105.804817")
+      city: "Ha Noi",
+      country: "Viet Nam",
+      lattitude: "21.028511",
+      longitude: "105.804817",
+    )
   ];
   // This widget is the root of your application.
   @override
@@ -34,7 +35,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        
       ),
       home: CurrentWeatherPage(locations: locations, context: context),
     );
