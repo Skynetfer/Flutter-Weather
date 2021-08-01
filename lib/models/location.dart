@@ -4,9 +4,10 @@ class Location {
   final String lattitude;
   final String longitude;
 
-  Location(
-      {required this.city,
-      required this.country,
-      required this.lattitude,
-      required this.longitude});
+  Location({
+    required this.city,
+    required this.country,
+    required this.lattitude,
+    required this.longitude,
+  });
 }
